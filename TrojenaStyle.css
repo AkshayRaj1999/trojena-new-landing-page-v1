@@ -126,6 +126,7 @@ header {
     justify-content: center;
     height: 44px;
     padding: 16px 24px;
+    font-family: Brown;
 }
 
 .cta__button:hover {

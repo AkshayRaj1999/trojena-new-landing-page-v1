@@ -620,7 +620,7 @@ header {
         width: 100%;
     }
     .contact__form__column__1 .error{
-        padding-top: 5px;
+        padding-top: 10px;
     }
     .trojena__footer__wrapper {
         flex-direction: column;

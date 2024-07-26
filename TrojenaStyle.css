@@ -48,7 +48,7 @@ img,
 image svg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 img,
@@ -86,6 +86,13 @@ button {
     margin: auto;
 }
 
+header {
+    position: sticky;
+    background: #fff;
+    z-index: 999;
+    top: 0;
+}
+
 .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -121,17 +128,26 @@ button {
     background-color: #dd8f3a;
 }
 
-.hero__banner__image__container {
-    position: relative;
+.hero__banner__section {
+    height: 100svh;
+    width: 100%;
+}
+
+.hero__banner__section img {
+    position: absolute;
+    inset: 0;
+    top: 80px;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .hero__banner__content__wrapper {
-    position: absolute;
+    position: relative;
     z-index: 5;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .hero__banner__content__wrapper h2 {
@@ -140,6 +156,7 @@ button {
     letter-spacing: 0.16em;
     color: var(--white-color);
     margin-bottom: 38px;
+    padding-right: 300px;
 }
 
 .hero__banner__content__cta__play__btn {
@@ -191,10 +208,6 @@ button {
     align-items: center;
 }
 
-/* .trojena__location__indication__image__wrapper {
-    flex: 1;
-} */
-
 .trojena__location__indication__text__wrapper p {
     padding-left: 20px;
     font-size: 16px;
@@ -233,6 +246,9 @@ button {
 
 .trojena__unique__image__container {
     max-height: 313px;
+}
+.trojena__unique__image__container img{
+    object-fit: cover;
 }
 
 .trojena__contact__section {
@@ -457,6 +473,7 @@ button {
         letter-spacing: 0.16em;
         line-height: 38px;
         margin-bottom: 177px;
+        padding-right: 24px;
     }
 
     .hero__banner__image__container {
@@ -492,9 +509,11 @@ button {
         font-size: 16px;
         font-weight: 400;
     }
-    .trojena__unique__section{
+
+    .trojena__unique__section {
         padding-bottom: 20px;
     }
+
     .trojena__unique__cotent__wrapper h3 {
         font-size: 25px;
         font-weight: 400;
@@ -524,9 +543,11 @@ button {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    .trojena__contact__form__wrapper{
+
+    .trojena__contact__form__wrapper {
         padding: 51.3px 0;
     }
+
     .trojena__contact__form__wrapper h3 {
         font-size: 25px;
         font-weight: 400;
@@ -539,11 +560,13 @@ button {
         font-size: 16px;
         font-weight: 400;
     }
-    .contact__form__row__1{
+
+    .contact__form__row__1 {
         flex-direction: column;
         gap: 0;
     }
-    .contact__form__row__2{
+
+    .contact__form__row__2 {
         flex-direction: column;
         gap: 0;
     }
@@ -552,7 +575,8 @@ button {
         flex-direction: column;
         align-items: flex-start;
     }
-    .contact__form__column__1{
+
+    .contact__form__column__1 {
         margin-bottom: 18px;
     }
 
@@ -600,7 +624,8 @@ button {
         margin-bottom: 12px;
         margin-right: 0;
     }
-    .trojena__footer__social__media__links ul li:not(:last-child){
+
+    .trojena__footer__social__media__links ul li:not(:last-child) {
         margin-right: 35px;
     }
 }
@@ -614,9 +639,13 @@ button {
 .iti--separate-dial-code .iti__selected-flag {
     width: auto;
 }
-.iti__selected-country-primary{
+
+.iti__selected-country-primary {
     padding-left: 24px;
 }
-.iti--allow-dropdown input.iti__tel-input, .iti--allow-dropdown input.iti__tel-input[type=text], .iti--allow-dropdown input.iti__tel-input[type=tel]{
+
+.iti--allow-dropdown input.iti__tel-input,
+.iti--allow-dropdown input.iti__tel-input[type=text],
+.iti--allow-dropdown input.iti__tel-input[type=tel] {
     padding-left: 63px;
 }

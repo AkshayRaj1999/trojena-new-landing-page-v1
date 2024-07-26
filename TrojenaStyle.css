@@ -199,9 +199,17 @@ header {
 
 .neom__residential__properties__section__image__container {
     width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
-
+.trojena__location__indication__image__wrapper{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+.trojena__location__indication__image__wrapper img{
+    aspect-ratio: 1.37/1;
+}
 .trojena__location__indicator__section {
     padding-bottom: 48px;
 }
@@ -210,7 +218,9 @@ header {
     display: flex;
     align-items: center;
 }
-
+.trojena__location__indication__text__wrapper{
+    flex: 1;
+}
 .trojena__location__indication__text__wrapper p {
     padding-left: 20px;
     font-size: 16px;
@@ -409,6 +419,7 @@ header {
 }
 .contact__form__row__4 span{
     color: var(--orange-color);
+    cursor: pointer;
 }
 
 .contact__form__row__4 a {

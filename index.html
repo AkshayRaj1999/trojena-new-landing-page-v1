@@ -16,11 +16,11 @@
             <div class="container">
                 <div class="navbar__container">
                     <div class="navbar__logo__container">
-                        <a href="https://www.trojena.com/en" target="_blank">
+                        <a href="https://www.neom.com/en-us/regions/trojena" target="_blank">
                             <img src="./Uploads/images/trojena-logo.svg" alt="trojena-logo">
                         </a>
                     </div>
-                    <a href="#" class="cta__button">
+                    <a href="#form-container" class="cta__button">
                         register
                     </a>
                 </div>
@@ -134,7 +134,7 @@
                 <h3>Register Your Interest</h3>
                 <p>Receive exclusive construction updates prior to the highly anticipated public release next year.
                     Register your interest in NEOM's epic mountain destination today.</p>
-                <div class="form-container">
+                <div class="form-container" id="form-container">
                     <form id="trojena-form" action="mywork.php" method="POST" onsubmit="return validateForm()">
                         <div class="contact__form__row__1">
                             <div class="contact__form__column__1">
@@ -164,16 +164,16 @@
                             <p>Are You Interested in Buying an Off-Plan Home?</p>
                             <div class="contact__form__input__fields">
                                 <input type="radio" id="yes" value="YES" name="options">
-                                <label for="yes">YES</label><br>
+                                <label for="yes">Yes</label><br>
                                 <input type="radio" id="no" value="NO" name="options">
-                                <label for="no">NO</label><br>
+                                <label for="no">No</label><br>
                                 <input type="radio" id="maybe" value="MAYBE" name="options">
-                                <label for="maybe">MAYBE</label>
+                                <label for="maybe">Maybe</label>
                             </div>
                         </div>
                         <div class="contact__form__row__4">
                             <p>By completing this form you are agreeing to being contacted by NEOM. If you would also
-                                like to hear updates from other parts of NEOM, please select Yes. We will treat your
+                                like to hear updates from other parts of NEOM,<span>please select Yes.</span> We will treat your
                                 information carefully. See our <a href="https://policies.google.com/terms">Terms of
                                     Use</a> and <a href="https://policies.google.com/privacy">Privacy
                                     Policy</a> for more details. This
@@ -194,7 +194,7 @@
         <div class="container">
             <div class="trojena__footer__wrapper">
                 <div class="trojena__footer__logo__container">
-                    <a href="#">
+                    <a href="https://www.neom.com/en-us/regions/trojena">
                         <img src="./Uploads/images/footer-logo.svg" alt="trojena-logo">
                     </a>
                 </div>
@@ -372,7 +372,6 @@
                 return isValid;
             }
         });
-
 
     </script>
 </body>

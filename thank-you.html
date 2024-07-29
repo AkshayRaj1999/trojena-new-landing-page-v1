@@ -4,215 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trojena Landing Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.6.1/build/css/intlTelInput.css">
-    <link rel="stylesheet" href="TrojenaStyle.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.6.1/build/js/intlTelInput.min.js"></script>
+    <title>trojena Long-Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        header {
+            position: sticky;
+            background: #fff;
+            z-index: 999;
+            top: 0;
+            padding: 22px 0;
+            border-bottom: 0.5px solid #b2b2b2;
+        }
+
+        .logo__container {
+            width: 216.7px;
+            height: auto;
+        }
+
+        .thanks__note__content__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 100px;
+            padding-bottom: 134px;
+        }
+
+        .thanks__note__content__wrapper h3 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: center;
+            color: var(--black-color);
+            max-width: 454px;
+            margin-bottom: 20px;
+        }
+
+        .thanks__note__content__wrapper p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            color: var(--black-color);
+            max-width: 519px;
+            margin-bottom: 70px;
+        }
+
+        .thanks__note__content__wrapper span {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 15.68px;
+            letter-spacing: 0.16em;
+            color: var(--black-color);
+            margin-bottom: 16px;
+        }
+
+        .trojena__footer {
+            background-color: var(--white-color);
+        }
+
+        .trojena__footer__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 57px;
+        }
+
+        .trojena__footer__wrapper p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21.84px;
+            letter-spacing: 0.16em;
+            color: var(--black-color);
+            margin-bottom: 12px;
+        }
+
+        .trojena__footer__social__media__links {
+            display: flex;
+            align-items: center;
+        }
+
+        .trojena__footer__social__media__links ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .trojena__footer__social__media__links ul li:not(:last-child) {
+            margin-right: 14px;
+        }
+
+        .trojena__footer__social__media__links ul>li>a>svg:hover {
+            scale: 1.1;
+            transition: all ease 0.3s;
+        }
+
+        /* media queries starts here */
+
+        @media screen and (max-width: 960px) {
+            .container {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+
+            header {
+                padding-top: 24px;
+                padding-bottom: 21px;
+            }
+
+            .navbar__logo__container {
+                max-width: 166px;
+            }
+
+            .thanks__note__content__wrapper {
+                padding-top: 104px;
+                padding-bottom: 146px;
+            }
+
+            .trojena__footer__wrapper {
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 48px;
+            }
+
+            .thanks__note__content__wrapper h3 {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                margin-bottom: 18px;
+                max-width: none;
+            }
+
+            .thanks__note__content__wrapper p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: center;
+                margin-bottom: 80px;
+                max-width: none;
+            }
+
+            .trojena__footer__logo__container {
+                width: 87px;
+                height: 90px;
+                margin-bottom: 14px;
+            }
+
+            .trojena__footer__social__media__links {
+                flex-direction: column;
+            }
+
+            .trojena__footer__social__media__links p {
+                margin-bottom: 12px;
+                margin-right: 0;
+            }
+
+            .trojena__footer__social__media__links ul li:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- header starts here -->
     <header>
-        <nav>
-            <div class="container">
-                <div class="navbar__container">
-                    <div class="navbar__logo__container">
-                        <a href="https://www.neom.com/en-us/regions/trojena" target="_blank">
-                            <img src="./Uploads/images/header-trojena-logo.svg" alt="trojena-logo">
-                        </a>
-                    </div>
-                    <a href="#trojena__contact__section" class="cta__button">
-                        register
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- header ends here -->
-    <!-- hero banner section starts here -->
-    <section class="hero__banner__section">
-        <!-- <iframe
-              width="1312"
-              id="video-iframe"
-              height="556"
-              src="https://www.youtube.com/embed/OiyAzP9PotM?autoplay=1&loop=1&mute=1&controls=0&playlist=OiyAzP9PotM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe> -->
-        <img src="./Uploads/images/hero--banner.jpg" alt="hero--banner">
-        <div class="hero__banner__content__wrapper">
-            <div class="container">
-                <h2>
-                    PREVIEW SAUDI ARABIA'S FIRST LUXURY MOUNTAIN RESIDENCES
-                </h2>
-                <a href="#" class="hero__banner__content__cta__play__btn">
-                    <span>
-                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_548_272)">
-                                <path
-                                    d="M22 0C16.1219 0 10.6012 2.28937 6.44187 6.44187C2.28937 10.6012 0 16.1219 0 22C0 27.8781 2.28937 33.3988 6.44187 37.5581C10.5944 41.7106 16.1219 44 22 44C27.8781 44 33.3988 41.7106 37.5581 37.5581C41.7106 33.4056 44 27.8781 44 22C44 16.1219 41.7106 10.6012 37.5581 6.44187C33.3988 2.28937 27.8781 0 22 0ZM35.6125 35.6125C31.9756 39.2494 27.1425 41.25 22 41.25C16.8575 41.25 12.0244 39.2494 8.3875 35.6125C4.75062 31.9756 2.75 27.1425 2.75 22C2.75 16.8575 4.75062 12.0244 8.3875 8.3875C12.0244 4.75062 16.8575 2.75 22 2.75C27.1425 2.75 31.9756 4.75062 35.6125 8.3875C39.2494 12.0244 41.25 16.8575 41.25 22C41.25 27.1425 39.2494 31.9756 35.6125 35.6125Z"
-                                    fill="white" />
-                                <path
-                                    d="M29.04 20.9205L19.415 13.358C19.0025 13.0349 18.4387 12.973 17.9644 13.1999C17.49 13.4267 17.1875 13.908 17.1875 14.4374V29.5624C17.1875 30.0917 17.49 30.5661 17.9575 30.7999C18.15 30.8892 18.3563 30.9374 18.5625 30.9374C18.865 30.9374 19.1675 30.8342 19.415 30.6417L29.04 23.0792C29.37 22.818 29.5625 22.4192 29.5625 21.9999C29.5625 21.5805 29.37 21.1817 29.04 20.9205ZM19.9375 26.7367V17.2699L25.96 22.0067L19.9375 26.7367Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_548_272">
-                                    <rect width="44" height="44" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </span>
-                    <span class="hero__banner__content__cta__play__btn__text">
-                        PLAY
-                    </span>
+        <div class="container">
+            <div class="logo__container">
+                <a href="https://www.neom.com/en-us/regions/trojena" target="_blank">
+                    <img src="./Uploads/images/trojena-header-logo.svg" alt="trojena-logo">
                 </a>
             </div>
         </div>
-    </section>
-    <!-- hero banner section ends here -->
-    <!-- residential project section starts here -->
-    <section class="neom__residential__properties__section">
+    </header>
+    <section class="thanks__note__content__section">
         <div class="container">
-            <h3>OWN ONE OF THE FIRST AVAILABLE RESIDENTIAL PROPERTIES IN NEOM</h3>
-            <p>A development like no other on earth, Trojena will redefine luxury mountain living in a place of epic
-                natural beauty, extraordinary architecture and all-season weather.
-            </p>
-            <div class="neom__residential__properties__section__image__container">
-                <picture>
-                    <source media="(max-width: 960px)" srcset="./Uploads/images/neom-project-2.jpg">
-                    <img src="./Uploads/images/neom-project.jpg" alt="the NEOM project">
-                </picture>
+            <div class="thanks__note__content__wrapper">
+                <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33.5" cy="33.5" r="32" stroke="#F59F40" stroke-width="3" />
+                    <path d="M21 33.5L29.6673 42L47 25" stroke="#F59F40" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <h3>
+                    Thank you for
+                    registering your interest
+                </h3>
+                <p>
+                    We have recorded your preferences, and you can expect exclusive updates and information before the
+                    highly anticipated general public release early next year.
+                </p>
+                <span>
+                    To learn more about Trojena
+                </span>
+                <button type="button" class="cta__button">
+                    <a href="https://www.neom.com/en-us/regions/trojena">
+                        CLICK HERE
+                    </a>
+                </button>
             </div>
         </div>
     </section>
-    <!-- residential project section ends here -->
-    <!-- location indicator section starts here -->
-    <section class="trojena__location__indicator__section">
-        <div class="container">
-            <div class="trojena__location__indication__content__wrapper">
-                <div class="trojena__location__indication__image__wrapper">
-                    <img src="./Uploads/images/map.png" alt="trojena-map">
-                </div>
-                <div class="trojena__location__indication__text__wrapper">
-                    <p>
-                        Situated on Jebel al Lawz, one of the most culturally and geographically significant mountains
-                        in
-                        the Kingdom of Saudi Arabia, Trojena is located 50km from the Gulf of Aqaba coast in the heart
-                        of
-                        NEOM’s nature region.<br><br>
-                        A world-class development, offering a once-in-a-lifetime opportunity for early investors and
-                        residents who seek unrivalled experiences, outdoor adventure and a vibrant community on the land
-                        of
-                        the future.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- location indicator section starts here -->
-    <!-- unique about section starts here -->
-    <section class="trojena__unique__section">
-        <div class="container">
-            <div class="trojena__unique__cotent__wrapper">
-                <h3>WHAT MAKES TROJENA UNIQUE?</h3>
-                <p>With elevations ranging from 1,500m to 2,500m above sea level, Trojena’s significantly cooler climate
-                    makes
-                    it possible to provide the Gulf’s first outdoor ski resort.</p>
-                <div class="trojena__unique__image__wrapper">
-                    <div class="trojena__unique__image__container">
-                        <img src="./Uploads/images/image-1.png" alt="trojena-image-1">
-                    </div>
-                    <div class="trojena__unique__image__container">
-                        <img src="./Uploads/images/image-2.jfif" alt="trojena-image-2">
-                    </div>
-                    <div class="trojena__unique__image__container trojena__unique__image__container__lsat__child">
-                        <img src="./Uploads/images/image-3.png" alt="trojena-image-3">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- unique about section ends here -->
-    <!-- contact section starts here -->
-    <section class="trojena__contact__section" id="trojena__contact__section">
-        <div class="container">
-            <div class="trojena__contact__form__wrapper">
-                <h3>Register Your Interest</h3>
-                <p>Receive exclusive construction updates prior to the highly anticipated public release next year.
-                    Register your interest in NEOM's epic mountain destination today.</p>
-                <div class="form-container" id="form-container">
-                    <form id="trojena-form" action="thank-you.html" method="POST">
-                        <div class="contact__form__row__1">
-                            <div class="contact__form__column__1">
-                                <label class="label" for="fname">FIRST NAME</label>
-                                <input type="text" id="fname" name="fname" placeholder="Enter your first name">
-                                <!-- <span id="fname-error" class="error">Please fill out the field</span> -->
-                            </div>
-                            <div class="contact__form__column__1">
-                                <label class="label" for="lname">LAST NAME</label>
-                                <input type="text" id="lname" name="lname" placeholder="Enter your last name">
-                                <!-- <span id="lname-error" class="error">Please fill out the field</span> -->
-                            </div>
-                        </div>
-                        <div class="contact__form__row__2">
-                            <div class="contact__form__column__1 countrycode">
-                                <label class="label" for="phone">MOBILE NUMBER</label>
-                                <div class="countrycode__wrap">
-                                    <input type="tel" class="countrycode"  name="countrycode" id="countrycode" value="966">
-                                    <input type="tel" name="phone" placeholder="(+966) 920022222" id="phone">
-                                </div>
-                                <!-- <span id="phone-error" class="error">Please fill out the field</span> -->
-                            </div>
-                            <div class="contact__form__column__1">
-                                <label class="label" for="email">EMAIL</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email">
-                                <!-- <span id="email-error" class="error">Please fill out the field</span> -->
-                            </div>
-                        </div>
-                        <div class="contact__form__row__3">
-                            <p>Are You Interested in Buy an Off-Plan Home?</p>
-                            <div class="contact__form__input__fields">
-                                <input type="radio" id="yes" value="YES" name="options" checked>
-                                <label for="yes">Yes</label><br>
-                                <input type="radio" id="no" value="NO" name="options">
-                                <label for="no">No</label><br>
-                                <input type="radio" id="maybe" value="MAYBE" name="options">
-                                <label for="maybe">Maybe</label>
-                            </div>
-                        </div>
-                        <div class="contact__form__row__4">
-                            <p>By completing this form you are agreeing to being contacted by NEOM. If you would also
-                                like to hear updates from other parts of NEOM, please select 'Yes'. We will treat your
-                                information carefully. See our <a href="https://policies.google.com/terms">Terms of
-                                    Use</a> and <a href="https://policies.google.com/privacy">Privacy
-                                    Policy</a> for more details. This
-                                site is protected by reCAPTCHA.
-                                <button class="cta__button contact__form__button" type="submit">REGISTER</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact section ends here -->
-    <!-- footer starts here -->
     <footer class="trojena__footer">
         <div class="container">
             <div class="trojena__footer__wrapper">
-                <div class="trojena__footer__logo__container">
-                    <a href="https://www.neom.com/en-us/regions/trojena">
-                        <img src="./Uploads/images/footer-trojena-logo.svg" alt="trojena-logo">
-                    </a>
-                </div>
+                <p>FOLLOW TROJENA ON SOCIAL MEDIA</p>
                 <div class="trojena__footer__social__media__links">
-                    <p>FOLLOW TROJENA ON SOCIAL MEDIA</p>
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/NEOMTROJENA/">
@@ -308,9 +307,6 @@
             </div>
         </div>
     </footer>
-    <!-- footer ends here -->
-    <!-- script for intl c:code  -->
-    <script src="./scripts/Validation.js"></script>
 </body>
 
 </html>
